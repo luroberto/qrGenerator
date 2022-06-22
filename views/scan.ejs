@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Your QR</title>
+</head>
+<body style="background-color: #EAF8FF;">
+    <div class="container  align-items-center justify-content-center vh-100">
+        <div class="card shadow-lg" style="max-width: 300px; padding: 3rem; position: absolute;
+        background-color: #01298B;
+        left: 50%;
+        top: 40%;
+        margin-top: -100px;
+        margin-left: -128px;">
+        <div class="card-body" style="justify-content: center; font-family: 'roboto', sans-serif;">
+            <div class="mb-3">
+                <img  src=<%=src%> >
+            </div>
+                <button style="width: 100%; background-color: #FE9B03; border-radius: 20px; font-size: 12px; border-color: #FE9B03;" type="submit" value="Your QR" class="btn btn-primary"><a href=<%=src%> style="text-decoration: none; color: white;" download="qr-generator"> Descargar </a></button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

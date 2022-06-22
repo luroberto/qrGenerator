@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>QR Generator</title>
+  </head>
+  <body style="background-color: #EAF8FF;">
+    <div class="container align-items-center justify-content-center vh-100 " >
+      <div class="card shadow-lg" style="max-width: 300px; padding: 3rem; position: absolute;
+      background-color: #01298B;
+      left: 50%;
+      top: 50%;
+      margin-top: -100px;
+      margin-left: -150px;">
+        
+        <h2
+          style="
+            font-family: 'roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: lighter;
+            color: #ffff;
+          "
+        >
+          QR GENERATOR
+        </h2>
+        <div class="card-body" style="display: flex; justify-content: center; font-family: 'roboto', sans-serif;">
+          <form action="/scan" method="POST">
+            <div class="mb-3">
+                <input type="text" name="url" placeholder="aquí va el link" style="font-size: 10px; width: 200px; color: #01298B; background-color: #EAF8FF;" class="form-control" aria-describedby="QRlHelp">
+            </div>
+            <button style="width: 100%; background-color: #FE9B03; border-radius: 20px; font-size: 12px; border-color: #FE9B03;" type="submit" value="Your QR" class="btn btn-primary">Crear</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
