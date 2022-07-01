@@ -11,33 +11,18 @@
     <title>QR Generator</title>
   </head>
   <body style="background-color: #EAF8FF;">
-    <div class="container align-items-center justify-content-center vh-100 " >
-      <div class="card shadow-lg" style="max-width: 300px; padding: 3rem; position: absolute;
-      background-color: #01298B;
-      left: 50%;
-      top: 50%;
-      margin-top: -100px;
-      margin-left: -150px;">
-        
-        <h2
-          style="
-            font-family: 'roboto', sans-serif;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-size: 20px;
-            font-weight: lighter;
-            color: #ffff;
-          "
-        >
-          QR GENERATOR
+    <div class="container d-flex align-items-center justify-content-center vh-100 " >
+      <div class="card shadow-lg" style="max-width: 300px; padding: 3rem; background-color: #ffffff;">
+      <img class="mb-4" src="./logoLaDefe.png" alt="">
+        <h2 style="font-family: 'roboto', sans-serif; display: flex; justify-content: center; text-align: center; font-size: 18px; font-weight: lighter; color: rgb(0, 28, 138);">
+          Generador de QR
         </h2>
         <div class="card-body" style="display: flex; justify-content: center; font-family: 'roboto', sans-serif;">
           <form action="/scan" method="POST">
             <div class="mb-3">
                 <input type="text" name="url" placeholder="aquí va el link" style="font-size: 10px; width: 200px; color: #01298B; background-color: #EAF8FF;" class="form-control" aria-describedby="QRlHelp">
             </div>
-            <button style="width: 100%; background-color: #FE9B03; border-radius: 20px; font-size: 12px; border-color: #FE9B03;" type="submit" value="Your QR" class="btn btn-primary">Crear</button>
+            <button style="width: 100%; background-color: #FE9B03; border-radius: 20px; font-size: 12px; border-color: #FE9B03;" type="submit" value="Your QR" class="btn btn-primary">Generar</button>
           </form>
         </div>
       </div>

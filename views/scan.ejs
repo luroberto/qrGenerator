@@ -11,18 +11,14 @@
     <title>Your QR</title>
 </head>
 <body style="background-color: #EAF8FF;">
-    <div class="container  align-items-center justify-content-center vh-100">
-        <div class="card shadow-lg" style="max-width: 300px; padding: 3rem; position: absolute;
-        background-color: #01298B;
-        left: 50%;
-        top: 40%;
-        margin-top: -100px;
-        margin-left: -128px;">
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+      <div class="card shadow-lg" style="max-width: 300px; padding: 3rem; position: absolute; background-color: #ffffff;">
+        <img src="./logoLaDefe.png" alt="">
         <div class="card-body" style="justify-content: center; font-family: 'roboto', sans-serif;">
-            <div class="mb-3">
+            <div class="mb-3" style="display: flex; justify-content: center;">
                 <img  src=<%=src%> >
             </div>
-                <button style="width: 100%; background-color: #FE9B03; border-radius: 20px; font-size: 12px; border-color: #FE9B03;" type="submit" value="Your QR" class="btn btn-primary"><a href=<%=src%> style="text-decoration: none; color: white;" download="qr-generator"> Descargar </a></button>
+            <button style="width: 100%; background-color: #FE9B03; border-radius: 20px; font-size: 12px; border-color: #FE9B03;" type="submit" value="Your QR" class="btn btn-primary"><a href=<%=src%> style="text-decoration: none; color: white;" download="qr-generator"> Descargar </a></button>
         </div>
         </div>
     </div>
